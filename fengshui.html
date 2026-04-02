@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Environmental Architect | 专业居家环境检测</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#44474a",
+              "secondary": "#5d5e61",
+              "inverse-primary": "#e9c349",
+              "on-secondary-fixed": "#1a1c1e",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#c6c6c9",
+              "primary-fixed-dim": "#e9c349",
+              "background": "#f9f9f9",
+              "on-error": "#ffffff",
+              "secondary-fixed": "#e2e2e5",
+              "tertiary-fixed": "#d4e4f6",
+              "on-tertiary-fixed-variant": "#394857",
+              "primary": "#211800",
+              "on-tertiary-fixed": "#0d1d2a",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e2e2e2",
+              "surface-container-highest": "#e2e2e2",
+              "surface": "#f9f9f9",
+              "secondary-container": "#e2e2e5",
+              "tertiary-fixed-dim": "#b8c8da",
+              "on-secondary-fixed-variant": "#454749",
+              "surface-container": "#eeeeee",
+              "on-surface": "#1a1c1c",
+              "surface-tint": "#735c00",
+              "on-tertiary": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary-fixed-variant": "#574500",
+              "on-primary-container": "#b49117",
+              "surface-dim": "#dadada",
+              "tertiary": "#0a1a27",
+              "error-container": "#ffdad6",
+              "on-background": "#1a1c1c",
+              "surface-bright": "#f9f9f9",
+              "on-secondary-container": "#636467",
+              "tertiary-container": "#202f3d",
+              "on-tertiary-container": "#8797a7",
+              "on-secondary": "#ffffff",
+              "on-primary": "#ffffff",
+              "primary-container": "#392c00",
+              "inverse-surface": "#2f3131",
+              "outline": "#75777a",
+              "surface-container-high": "#e8e8e8",
+              "error": "#ba1a1a",
+              "primary-fixed": "#ffe088",
+              "outline-variant": "#c5c6ca",
+              "surface-container-low": "#f3f3f3",
+              "on-primary-fixed": "#241a00"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #f9f9f9;
+        color: #1a1c1c;
+      }
+      .font-serif { font-family: 'Noto Serif', serif; }
+      .tracking-tight { letter-spacing: -0.02em; }
+      .tracking-widest { letter-spacing: 0.1rem; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 max-w-full bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-xl border-b border-stone-200/20 dark:border-stone-800/20">
+<div class="text-xl font-bold tracking-tighter text-stone-900 dark:text-stone-100 uppercase font-serif" style="">
+            Environmental Architect
+        </div>
+<div class="hidden md:flex gap-12 items-center font-serif tracking-tight">
+<a class="text-yellow-600 dark:text-yellow-500 font-semibold hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors duration-300" href="#" style="">Analysis</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors duration-300" href="#" style="">Process</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors duration-300" href="#" style="">Pricing</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors duration-300" href="#" style="">FAQ</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2 uppercase text-xs tracking-widest font-bold hover:bg-primary-container transition-colors duration-300 inline-block" href="https://wa.link/zxybax" target="_blank">Get Started</a>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="luxury modern minimalist home exterior with sharp architectural lines, clean concrete and glass at sunset with dramatic long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYgBR4pL71ROY9X1YMh_11spihL6OqUexKX4BAjbEl3LIo90MDAYRjGBXrvJZgi6PQLFGUXvKLUzti7BVnTA9NTDObtVsS1_AIcsLbmTl5lCkYIu57poRRn6D0Ip9ZWfZiozsiqbS_PnOrfN892Kj1ue7TUlFC_-rCKwuiNlhn5e2LHfsu3af56aNUBo7Rm3FNIhriALfPZ2CIHWwUXZKoS78ZgDTbIUDK78LYGInOKWTBL-QlH60ZrGIlHaWmbk5j6vRCjikczVw" style=""/>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-8 lg:col-span-7">
+<span class="inline-block bg-primary-fixed-dim text-primary px-4 py-1 text-xs font-bold tracking-widest uppercase mb-6" style="">Structural Environmental Logic</span>
+<h1 class="text-5xl md:text-7xl font-serif text-white tracking-tight leading-tight mb-8" style="">
+                    邻居都在偷偷做风水，<br/><span class="text-primary-fixed-dim italic" style="">你还没开始？</span>
+</h1>
+<p class="text-xl md:text-2xl text-stone-200 font-light max-w-2xl leading-relaxed mb-10" style="">
+                    你不是不努力，是你住在“拖你后腿”的环境。整条街的人在调整环境、招财、改运，只有你什么都没做。
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 items-start">
+<a class="bg-primary-fixed-dim text-primary px-10 py-5 text-sm font-bold tracking-widest uppercase hover:bg-white transition-all duration-300 inline-block" href="https://wa.link/zxybax" target="_blank">立即评估我的环境</a>
+<div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 text-white text-sm" style="">
+<span class="block font-bold text-primary-fixed-dim uppercase mb-1" style="">Impact Check</span>
+                        👉 你觉得，结果会一样吗？
+                    </div>
+</div>
+</div>
+<!-- Analysis Overlay Signature Component -->
+<div class="hidden lg:block lg:col-span-4 lg:col-start-9 bg-surface-variant/60 backdrop-blur-xl p-8 border-l-4 border-primary-fixed-dim">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary-fixed-dim" style='font-variation-settings: "FILL" 1;'>architecture</span>
+<span class="text-xs font-bold tracking-widest uppercase text-primary" style="">Structural Flow Analysis</span>
+</div>
+<p class="text-primary text-sm leading-relaxed mb-6 font-medium" style="">
+                    "Environmental factors account for 33% of human performance. When surroundings work against you, effort yields diminishing returns."
+                </p>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-primary/10 pb-2">
+<span class="text-xs uppercase text-secondary" style="">Spatial Tension</span>
+<span class="text-sm font-bold font-serif" style="">High</span>
+</div>
+<div class="flex justify-between items-end border-b border-primary/10 pb-2">
+<span class="text-xs uppercase text-secondary" style="">Growth Vector</span>
+<span class="text-sm font-bold font-serif" style="">Obstructed</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Identification ("Quick Hit") -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8">
+<div class="max-w-4xl mb-20">
+<span class="label-md uppercase tracking-widest text-secondary text-xs font-bold block mb-4" style="">Internal Reflection</span>
+<h2 class="text-4xl md:text-5xl font-serif text-primary tracking-tight" style="">你有没有这种感觉？</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-12 mb-20">
+<div class="p-8 bg-surface-container-low border-t-2 border-primary">
+<div class="text-4xl mb-6" style="">😓</div>
+<h3 class="text-lg font-bold text-primary mb-4" style="">商业困局</h3>
+<p class="text-secondary leading-relaxed" style="">做生意越来越难，明明投入了大量精力，但讲不出原因地在下滑。</p>
+</div>
+<div class="p-8 bg-surface-container-low border-t-2 border-primary-fixed-dim">
+<div class="text-4xl mb-6" style="">😓</div>
+<h3 class="text-lg font-bold text-primary mb-4" style="">努力无果</h3>
+<p class="text-secondary leading-relaxed" style="">非常拼命，但就是感觉前方有一堵墙，卡在那里无法突破现状。</p>
+</div>
+<div class="p-8 bg-surface-container-low border-t-2 border-primary">
+<div class="text-4xl mb-6" style="">😓</div>
+<h3 class="text-lg font-bold text-primary mb-4" style="">家庭重压</h3>
+<p class="text-secondary leading-relaxed" style="">家里琐事不断，常常感到莫名的不顺心，心理压力极大。</p>
+</div>
+</div>
+<div class="bg-primary text-white p-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="max-w-xl">
+<p class="text-2xl font-serif leading-snug" style="">
+                        👉 很可能不是你的问题 <br/>
+<span class="text-primary-fixed-dim" style="">👉 是你住的环境，一直在“吃你运”</span>
+</p>
+</div>
+<div class="material-symbols-outlined text-primary-fixed-dim text-6xl opacity-30" style="">warning</div>
+</div>
+</div>
+</section>
+<!-- The "Reality Slap" (Education) -->
+<section class="py-32 bg-surface-container">
+<div class="container mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<img class="w-full aspect-square object-cover grayscale brightness-75 contrast-125" data-alt="abstract architectural blueprint with clean geometric lines and minimal furniture in a high-end luxury apartment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9pYVrZ1gz3KxpWHOTKaw_K0j0F7K9OaMSBiDkErF4rzQfiPNjuW3oyKR-BcypaZSaxCSzk_v1JllX6hdYAAObnc8EQUpHsmU1C_05IK1d1JOJwem-dzsGcPuj5kAXSREgIYjVNBUNvQa4qFdQDB8F4b7DsbqGMw4VklBXwNrvnFwBiCb7dF0WPdvl_oJ13kUCPctsNPiXBUDSJi48qdzFYFKNSkrxWgxYPIBdi5BxLcOTrpzb0DAqeaXpgMlBJ_-wcK4AEDav8Cc" style=""/>
+</div>
+<div class="order-1 lg:order-2">
+<span class="label-md uppercase tracking-widest text-primary-fixed-dim text-xs font-bold block mb-4" style="">Expert Analysis</span>
+<h2 class="text-4xl md:text-5xl font-serif text-primary tracking-tight mb-8" style="">很多人以为风水是...</h2>
+<div class="space-y-6 mb-12">
+<div class="flex items-center gap-4 text-stone-400 font-medium">
+<span class="material-symbols-outlined" style="">close</span>
+<span class="" style="">摆放风水摆件</span>
+</div>
+<div class="flex items-center gap-4 text-stone-400 font-medium">
+<span class="material-symbols-outlined" style="">close</span>
+<span class="" style="">挂大红灯笼</span>
+</div>
+<div class="flex items-center gap-4 text-stone-400 font-medium border-b border-outline-variant/20 pb-6">
+<span class="material-symbols-outlined" style="">close</span>
+<span class="" style="">四处张贴符咒</span>
+</div>
+</div>
+<p class="text-xl font-bold text-primary mb-8 leading-relaxed" style="">
+                        👉 讲真的，这些只是表面。 <br/>真正的核心在于：
+                    </p>
+<ul class="space-y-6 mb-12">
+<li class="flex items-start gap-4" style="">
+<span class="text-primary-fixed-dim font-bold text-lg font-serif" style="">01.</span>
+<div>
+<span class="font-bold text-primary block" style="">住宅整体结构</span>
+<span class="text-sm text-secondary" style="">空间的几何分布决定了能量的沉积与流动。</span>
+</div>
+</li>
+<li class="flex items-start gap-4" style="">
+<span class="text-primary-fixed-dim font-bold text-lg font-serif" style="">02.</span>
+<div>
+<span class="font-bold text-primary block" style="">邻里动态变化</span>
+<span class="text-sm text-secondary" style="">外部环境的改变会直接导致你原有平衡的崩塌。</span>
+</div>
+</li>
+<li class="flex items-start gap-4" style="">
+<span class="text-primary-fixed-dim font-bold text-lg font-serif" style="">03.</span>
+<div>
+<span class="font-bold text-primary block" style="">区域气流 &amp; 空间压力</span>
+<span class="text-sm text-secondary" style="">你看不到的微观环境压力正在持续消耗你的心理韧性。</span>
+</div>
+</li>
+</ul>
+<div class="p-8 bg-surface border-l-8 border-primary">
+<p class="text-lg font-medium italic" style="">
+                            “当越来越多人在调整，有些人越来越顺，有些人直接被压住。问题是：你是哪一个？”
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Offer (Low Ticket) -->
+<section class="py-32 bg-primary text-white relative">
+<div class="container mx-auto px-8">
+<div class="max-w-5xl mx-auto text-center">
+<h2 class="text-4xl md:text-6xl font-serif tracking-tight mb-16" style="">
+                    🎯【居家环境快速检测报告】
+                </h2>
+<div class="grid md:grid-cols-3 gap-0 border border-white/10 mb-20">
+<div class="p-10 border-r border-white/10 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-6" style="">payments</span>
+<h3 class="text-xl font-bold mb-4" style="">财富流向</h3>
+<p class="text-stone-400 text-sm" style="">精准识别住宅是否存在严重的“漏财”结构缺陷。</p>
+</div>
+<div class="p-10 border-r border-white/10 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-6" style="">group_work</span>
+<h3 class="text-xl font-bold mb-4" style="">邻里干扰</h3>
+<p class="text-stone-400 text-sm" style="">分析周围建筑改动是否已经窃取或压制了你的居家运势。</p>
+</div>
+<div class="p-10 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-6" style="">trending_down</span>
+<h3 class="text-xl font-bold mb-4" style="">运势拖拽点</h3>
+<p class="text-stone-400 text-sm" style="">找出家中那些一直在悄悄拖慢你事业和健康的负面空间。</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-12 text-primary max-w-2xl mx-auto flex flex-col items-center">
+<span class="text-xs font-bold tracking-widest uppercase mb-4 text-secondary" style="">Limited Time Professional Access</span>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="text-2xl font-serif" style="">RM</span>
+<span class="text-7xl font-serif font-bold" style="">199</span>
+<span class="text-stone-400 line-through ml-4" style="">RM 499</span>
+</div>
+<div class="text-center italic text-stone-500 mb-10" style="">
+                        （很多人看完第一反应：walao…原来问题在这里）
+                    </div>
+<a class="w-full bg-primary text-white py-6 text-sm font-bold tracking-widest uppercase hover:bg-primary-container transition-all block text-center" href="https://wa.link/zxybax" target="_blank">立即 DM 我 "CHECK"</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Urgency & CTA -->
+<section class="py-24 bg-surface-container-low border-b border-outline-variant/10">
+<div class="container mx-auto px-8 max-w-4xl text-center">
+<div class="inline-flex items-center gap-2 text-error font-bold uppercase tracking-widest text-xs mb-8" style="">
+<span class="material-symbols-outlined text-sm" style="">error</span>
+                严谨提示
+            </div>
+<p class="text-2xl font-serif text-primary leading-relaxed mb-12" style="">
+                ⚠️ 我不是做 mass 的 👉 每天只看少量案例 <br/>
+<span class="font-bold underline decoration-primary-fixed-dim decoration-4" style="">满了直接关，不会一直开。</span>
+</p>
+<div class="flex flex-col items-center gap-4">
+<a class="group relative inline-flex items-center gap-4 bg-primary text-on-primary px-12 py-6 text-lg font-bold tracking-widest uppercase overflow-hidden" href="https://wa.link/zxybax" style="" target="_blank">
+<span class="relative z-10" style="">👉 DM 我 “CHECK”</span>
+<span class="material-symbols-outlined relative z-10 group-hover:translate-x-2 transition-transform" style="">send</span>
+<div class="absolute inset-0 bg-primary-fixed-dim translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+</a>
+<p class="text-sm text-secondary uppercase tracking-tighter" style="">我帮你看你家现在的情况</p>
+</div>
+</div>
+</section>
+<!-- Upsell Hint -->
+<section class="py-20 bg-surface">
+<div class="container mx-auto px-8 text-center">
+<div class="max-w-2xl mx-auto p-10 bg-surface-container-highest/30 border border-outline-variant/20">
+<p class="text-stone-600 font-medium italic" style="">
+                    "如果检测到你家有问题—— 我会直接告诉你：<br/>
+<span class="text-primary font-bold" style="">要不要做完整调整（不是每个人都需要）。</span>"
+                </p>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8">
+<div class="mb-20 text-center">
+<h2 class="text-4xl font-serif text-primary" style="">常见疑问解答</h2>
+<div class="w-20 h-1 bg-primary-fixed-dim mx-auto mt-6"></div>
+</div>
+<div class="max-w-3xl mx-auto space-y-12">
+<div class="space-y-4">
+<h4 class="text-lg font-bold text-primary flex gap-4 items-center" style="">
+<span class="material-symbols-outlined text-primary-fixed-dim" style="">help_outline</span>
+                        我不信风水可以做吗？
+                    </h4>
+<p class="text-secondary leading-relaxed pl-10 border-l border-primary/10" style="">
+                        可以。这在本质上是<span class="font-bold text-primary" style="">环境心理学</span>与<span class="font-bold text-primary" style="">空间结构分析</span>。我们关注的是物理环境对人的潜意识和能量损耗的影响，而非迷信。
+                    </p>
+</div>
+<div class="space-y-4">
+<h4 class="text-lg font-bold text-primary flex gap-4 items-center" style="">
+<span class="material-symbols-outlined text-primary-fixed-dim" style="">help_outline</span>
+                        一定要花很多钱吗？
+                    </h4>
+<p class="text-secondary leading-relaxed pl-10 border-l border-primary/10" style="">
+                        不一定。很多深刻的影响源自于极小的物理改动。通过精确的分析，我们往往只需要调整家具位置、动线或光影关系，就能产生巨大改变。
+                    </p>
+</div>
+<div class="space-y-4">
+<h4 class="text-lg font-bold text-primary flex gap-4 items-center" style="">
+<span class="material-symbols-outlined text-primary-fixed-dim" style="">help_outline</span>
+                        RM199 真的有用？
+                    </h4>
+<p class="text-secondary leading-relaxed pl-10 border-l border-primary/10" style="">
+                        这是一份“体检报告”。它至少让你清醒地知道：你现在的努力是在被环境“助推”还是被“拖拽”。明确问题所在是解决问题的第一步。
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Push -->
+<section class="py-32 bg-primary-container text-white overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="geometric floor plan pattern and architectural grid lines overlaying a dark professional background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUCqJMxiGwa40WdE7r84RJNztN28BCZIA4awyt74vJZteS50OO0Rysvx7W92OloHZcsDvEb2p1DXeZaPzy_NcpcWuMrZ-pJ2M4OBUBIpvSL6H2GApfF7au2olAMFDFG-BqZYuuulv1gVAnyRuaCnyIUH8dsFDOIqgFR8tzdqO1s3Z78egaEl0v2VmET29OMMicX1bVmcjhZKk_Jvya3-2fvIS-8Ampeih5hWUJFhozQCGUll3tislI16MqoT4aDSzyy7D2_gmMs-I" style=""/>
+</div>
+<div class="container mx-auto px-8 relative z-10 text-center">
+<h2 class="text-3xl md:text-5xl font-serif mb-8 max-w-4xl mx-auto leading-tight" style="">
+                不要等别人已经开始赢了，<br/><span class="text-primary-fixed-dim" style="">你才来问为什么。</span>
+</h2>
+<div class="mt-12">
+<a class="inline-block bg-primary-fixed-dim text-primary px-16 py-8 text-xl font-bold tracking-widest uppercase hover:bg-white transition-all transform hover:-translate-y-1" href="https://wa.link/zxybax" style="" target="_blank">
+                    现在 DM “CHECK”
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-20 px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-stone-900 dark:bg-black text-stone-100 font-sans text-xs tracking-widest uppercase">
+<div class="text-lg font-serif text-stone-100 normal-case" style="">
+            Environmental Architect
+        </div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="text-stone-400 hover:text-white transition-colors" href="#" style="">Privacy Policy</a>
+<a class="text-stone-400 hover:text-white transition-colors" href="#" style="">Terms of Service</a>
+<a class="text-stone-400 hover:text-white transition-colors" href="#" style="">Consultation</a>
+<a class="text-stone-400 hover:text-white transition-colors" href="#" style="">Contact</a>
+</div>
+<div class="text-stone-500 text-[10px] text-center md:text-right normal-case" style="">
+            © 2024 Environmental Psychology &amp; Structural Logic. All rights reserved.
+        </div>
+</footer>
+</body></html>
